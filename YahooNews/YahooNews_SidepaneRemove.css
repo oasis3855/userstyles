@@ -1,0 +1,84 @@
+/* ==UserStyle==
+@name         YahooNewsJP_SidepaneRemove
+@namespace    StylishThemes
+@version      2021/11/12
+@description  Yahoo!ニュース サイドペイン非表示化
+@author       H.INOUE
+@homepageURL  https://github.com/oasis3855/userstyles
+@license      GNU GPL ver2
+==/UserStyle== */
+
+@-moz-document domain("news.yahoo.co.jp") {
+/* サイドペイン */
+#yjnSub,
+#sub
+{
+    display: none !important;
+    /* visibility: hidden !important; */
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* 最上部 Yahoo検索ボックス */
+div#msthdtp
+{
+    visibility: hidden !important;
+    display: none !important;
+    height: 0 !important;
+}
+
+/* ニューストピック アイコン写真 */
+div[class*="newsFeed"][class*="thumb"]
+{
+    display: none !important;
+    /* visibility: hidden !important; */
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* モバイル画面で一覧に混入した宣伝的項目 */
+div[class^="sc-NGAnU"],
+div[class^="sc-kWYWtc"],
+div[id^="inf_mid"],
+header[class^="sc-DNdyV"],
+/* 一覧ページのトップにある巨大ライブタイトル */
+section[id="liveStream"],
+/* ニューストピックに混入した宣伝項目 */
+div[id^="ad"],
+a[class*="yads"],
+li[class*="FeedAdItem"],
+/* 記事の下部 */
+div[class^="sc-kNBZ"],
+section[id^="uamods-also"],
+div[class^="sc-jRuh"],
+div[id^="articleComment"],
+/* 記事下部の宣伝 */
+aside[class^="sc-fih"],
+div.comment-contents
+{
+    visibility: hidden !important;
+    height: 0 !important;
+}
+
+/* 記事の下部 ニューストピック一覧表示（デスクトップ） */
+aside#newsFeed,
+/*div#uamods-recommend,*/
+/* 一覧ページのフッター */
+footer#yjnFooter
+{
+    visibility: hidden !important;
+    display: none !important;
+    height: 0 !important;
+}
+
+/* 記事の下部 ニューストピック一覧表示（モバイル） */
+aside.articleTimeLine
+{
+    visibility: hidden !important;
+    /* 処理速度が高速でないスマホでは、次行 display をコメントアウトすること */
+    /*display: none !important;*/
+    height: 0 !important;
+}
+
+}
+
