@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         YahooNewsJP_SidepaneRemove
 @namespace    StylishThemes
-@version      2021/11/12
+@version      2021/11/19
 @description  Yahoo!ニュース サイドペイン非表示化
 @author       H.INOUE
 @homepageURL  https://github.com/oasis3855/userstyles
@@ -20,7 +20,11 @@
 }
 
 /* 最上部 Yahoo検索ボックス */
-div#msthdtp
+div#msthdtp,
+/* 最上部 宣伝ライン */
+div[id^="mhd_prem"],
+div[id^="mhd_bann"],
+div[class^="adWrap"]
 {
     visibility: hidden !important;
     display: none !important;
@@ -28,7 +32,9 @@ div#msthdtp
 }
 
 /* ニューストピック アイコン写真 */
-div[class*="newsFeed"][class*="thumb"]
+div[class*="newsFeed"][class*="thumb"],
+/* ニューストピック アイコン写真(mobile) */
+div[class^="sc-gJq"]
 {
     display: none !important;
     /* visibility: hidden !important; */
@@ -79,6 +85,59 @@ aside.articleTimeLine
     /*display: none !important;*/
     height: 0 !important;
 }
+}
+
+@-moz-document domain("finance.yahoo.co.jp") {
+/* 最上部 Yahoo検索ボックス */
+div#msthdtp,
+/* 画面上部のYahooツール宣伝*/
+a[id^="w2aBnr"]
+{
+    visibility: hidden !important;
+    height: 0 !important;    
+}
+
+/* サイドペインの宣伝 */
+div#top_promo,
+div#pos-lrec
+{
+    display: none !important;
+    /* visibility: hidden !important; */
+    width: 0 !important;
+    height: 0 !important;
 
 }
 
+/* ニューストピック アイコン写真(mobile) */
+dd.listTextlink_img
+{
+    display: none !important;
+    /* visibility: hidden !important; */
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* トピックに挟まった巨大宣伝 */
+div#yt_headline,
+div[id^="ad_stream"],
+div[id^="yads"],
+div#SMON,
+div#MMON,
+div[id^="ad-"],
+div[class^="mar"],
+div[id^="yads"],
+div[data-uv-element^="yads"]
+{
+    visibility: hidden !important;
+    height: 0 !important;
+}
+
+/* 画面下の宣伝 */
+div[id^="overlayAd"]
+{
+    display: none !important;
+    /* visibility: hidden !important; */
+    width: 0 !important;
+    height: 0 !important;
+}
+}
