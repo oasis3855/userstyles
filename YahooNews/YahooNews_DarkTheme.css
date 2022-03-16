@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         YahooNewsJP_DarkTheme
 @namespace    StylishThemes
-@version      2022/02/16
+@version      2022/03/16
 @description  Yahooニュース 夜間用ダークテーマ
 @author       H.INOUE
 @homepageURL  https://github.com/oasis3855/userstyles
@@ -21,6 +21,10 @@
         }
         a {
             color: #eeeeee !important;
+        }
+        /* 記事中のキーワードリンク */
+        a[class^=yjS] {
+            color: #aabbee !important;
         }
         dl.article dt {
             font-size: 1.0em !important;
