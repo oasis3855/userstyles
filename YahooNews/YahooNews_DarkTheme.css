@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         YahooNewsJP_DarkTheme
 @namespace    StylishThemes
-@version      2022/03/16
+@version      2022/03/30
 @description  Yahooニュース 夜間用ダークテーマ
 @author       H.INOUE
 @homepageURL  https://github.com/oasis3855/userstyles
@@ -9,7 +9,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("news.yahoo.co.jp"), domain("headlines.yahoo.co.jp"), domain("https://finance.yahoo.co.jp/news") {
-    :root {
+:root {
             --col-bg-hover-normal: none !important;
             --col-bg-hover-normal-pc: none !important;
         }
@@ -199,16 +199,20 @@
             color: #eeeeee !important;
         
         }
-    }
-    
-    @-moz-document url-prefix("https://finance.yahoo.co.jp/news") {
-        body,
+}
+
+@-moz-document url-prefix("https://finance.yahoo.co.jp/news") {
+body,
         div#msthd,
         div[class^="anex"],
         div[class^="_3-AD"],
         div#root,
         div#contents,
-        div[class^="NmK"]
+        div[class^="NmK"],
+        main[class^="_15"],
+        section[class^="_2"],
+        div[class^="_1"],
+        div[id^="yj"]
         {
             background-color: #333333 !important;
             color: #eeeeee !important;
@@ -224,5 +228,4 @@
             background-color: #555555 !important;
             color: #eeeeee !important;     
         }
-        
-    }
+}
