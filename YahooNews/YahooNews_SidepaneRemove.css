@@ -150,8 +150,10 @@ div[class^="_1zi"]
 
 /* ニューストピック アイコン写真(mobile) */
 dd.listTextlink_img,
-img[class^="ZJ"],
-span[class^="_2M"]
+span[class*="_3_oTGZiC"]
+/*span[class^="_2MdR5Hqf"]*/
+/*img[class^="ZJASCvNn"],*/
+/*span[class^="_2mZs3EmW"]*/
 {
     display: none !important;
     /* visibility: hidden !important; */
