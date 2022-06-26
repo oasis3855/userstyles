@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         YahooNewsJP_SidepaneRemove
 @namespace    StylishThemes
-@version      2022/03/30
+@version      2022/06/26
 @description  Yahoo!ニュース サイドペイン非表示化
 @author       H.INOUE
 @homepageURL  https://github.com/oasis3855/userstyles
@@ -9,6 +9,8 @@
 ==/UserStyle== */
 
 @-moz-document domain("news.yahoo.co.jp") {
+/* news.yahoo.co.jp*/
+
 /* サイドペイン */
 #yjnSub,
 #sub
@@ -30,6 +32,11 @@ div[class^="adWrap"]
     display: none !important;
     height: 0 !important;
 }
+div#inf_top
+{
+    visibility: hidden !important;
+}
+
 
 /* ニュースエリア */
 div#yjnMain
@@ -40,7 +47,7 @@ div#yjnMain
 /* ニューストピック アイコン写真 */
 div[class*="newsFeed"][class*="thumb"],
 div[class*="thumb"],
-div[class^="sc-f"],
+/*div[class^="sc-f"],*/
 /* ニューストピック アイコン写真(mobile) */
 div[class^="sc-gJq"]
 {
@@ -61,6 +68,7 @@ section[id="liveStream"],
 div[id^="ad"],
 a[class*="yads"],
 li[class*="FeedAdItem"],
+div[class^="sc-gjAXCV"], /* 記事中の画像 */
 /* 記事の下部 */
 div[class^="sc-kNBZ"],
 section[id^="uamods-also"],
@@ -97,7 +105,10 @@ aside.articleTimeLine
 
 /* ソーシャルメディア ボタン */
 div[class^="sc-gC"],
-div[class*="Reaction"]
+div[class*="Reaction"],
+div[class^="sc-hPeUyl"],
+div[class^="sc-jeCdPy"],
+div[class^="sc-ePZHVD"]
 {
     visibility: hidden !important;
     display: none !important;
@@ -107,10 +118,13 @@ div[class*="Reaction"]
 }
 
 @-moz-document domain("finance.yahoo.co.jp") {
+/* finance.yahoo.co.jp*/
+
 /* 最上部 Yahoo検索ボックス */
 div#msthdtp,
 /* 画面上部のYahooツール宣伝*/
-a[id^="w2aBnr"]
+a[id^="w2aBnr"],
+div[id^="mhd_prem_header_sp"]
 {
     visibility: hidden !important;
     height: 0 !important;    
@@ -161,6 +175,15 @@ li[class*="_2F"]
     visibility: hidden !important;
     height: 0 !important;
 }
+
+/* 記事中の画像 (無意味なイメージ写真は消す。データ画像は残す）*/
+/*div[class^="_1d0Lau"]*/ /* この選択は、記事のデータ画像まですべて消してしまう */
+a[data-rapid_p="2"]
+{
+    visibility: hidden !important;
+    height: 0 !important;
+}
+
 
 /* 画面下の宣伝 */
 div[id^="overlayAd"],
