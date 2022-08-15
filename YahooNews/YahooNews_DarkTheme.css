@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         YahooNewsJP_DarkTheme
 @namespace    StylishThemes
-@version      2022/06/26
+@version      2022/08/14
 @description  Yahooニュース 夜間用ダークテーマ
 @author       H.INOUE
 @homepageURL  https://github.com/oasis3855/userstyles
@@ -46,10 +46,21 @@
         div.mainBody,
         div.adWrap,
         article#uamods,
+        section[id^=uamods],
         div#yjsmhLogo,
         div#yjsmhPremHeader,
         div#main_cnt_wrapper,
         div#wrapper,
+        div[class^=sc-hQrNYi], /* 記事トップの写真 */
+        p[class^=sc-cbcvrX], /* 写真付き記事のリンク付きタイトル文字 */
+/*        div[class^=mainWrapper], main#contents,*/
+        /* トピック記事概要ページ */
+        div[class^=sc-kWYWtc],
+        div#uamods-pickupmain,
+        div[class^=sc-klgLii],
+        div[class^=sc-jskUVp],
+
+        div[id^=contentsWrap],
         div#content,
         div.contentsWrap,
         div#contents,
@@ -230,3 +241,4 @@ body,
             color: #eeeeee !important;     
         }
 }
+

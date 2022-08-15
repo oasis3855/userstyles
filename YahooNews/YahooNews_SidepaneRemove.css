@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         YahooNewsJP_SidepaneRemove
 @namespace    StylishThemes
-@version      2022/07/16
+@version      2022/08/14
 @description  Yahoo!ニュース サイドペイン非表示化
 @author       H.INOUE
 @homepageURL  https://github.com/oasis3855/userstyles
@@ -59,7 +59,11 @@ div[class^="sc-gJq"]
 
 /* モバイル画面で一覧に混入した宣伝的項目 */
 div[class^="sc-NGAnU"],
-div[class^="sc-kWYWtc"],
+/* div[class^="sc-kWYWtc"],*/  /* 記事リスト上部top10の記事で概要ページが表示されない為無効化 */
+/* 記事リスト上部top10の記事で概要ページ */
+div[class^=sc-eoricN],
+div[class^=PickupFollowUp],
+
 div[id^="inf_mid"],
 header[class^="sc-DNdyV"],
 /* 一覧ページのトップにある巨大ライブタイトル */
@@ -206,3 +210,4 @@ iframe[id^="yad"]
     height: 0 !important;    
 }
 }
+
