@@ -114,8 +114,8 @@ aside.articleTimeLine
 div[class^="sc-gC"],
 div[class*="Reaction"],
 div[class^="sc-hPeUyl"],
-div[class^="sc-jeCdPy"],
-div[class^="sc-ePZHVD"]
+div[class^="sc-jeCdPy"]
+/*div[class^="sc-ePZHVD"]*/
 {
     visibility: hidden !important;
     display: none !important;
