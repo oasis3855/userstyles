@@ -1,4 +1,4 @@
-## Userstyles 導入・作成メモ<!-- omit in toc -->
+## UserCSS 導入・作成メモ<!-- omit in toc -->
 
 [Home](https://oasis3855.github.io/webpage/) > [Software](https://oasis3855.github.io/webpage/software/index.html) > [Software Download](https://oasis3855.github.io/webpage/software/software-download.html) > [userstyles](../README.md) > ***HowTo.md*** (this page)
 
@@ -18,7 +18,7 @@
 
 ## スタイルCSSの公式ドキュメント
 
-CSSファイルの構文（Stylus連携・管理機能） ： [Writing UserCSS](https://github.com/openstyles/stylus/wiki/Writing-UserCSS)
+CSSファイルの構文（stylus連携・管理機能） ： [Writing UserCSS](https://github.com/openstyles/stylus/wiki/Writing-UserCSS)
 
 
 CSSファイルの構文（一般的なCSS文法） ： [Writing styles](https://github.com/openstyles/stylus/wiki/Writing-styles)
@@ -28,7 +28,7 @@ CSSファイルの構文（一般的なCSS文法） ： [Writing styles](https:/
 
 ## スタイルCSS の手動インストール方法
 
-- ブラウザの拡張機能Stylusアイコンをクリックし、「管理」ボタンをクリックして管理画面を表示
+- ブラウザの拡張機能stylusアイコンをクリックし、「管理」ボタンをクリックして管理画面を表示
 - 「スタイルを新規作成」ボタンをクリックして、スタイルCSSを新規作成する
 - 「インポート」ボタンをクリックして、スタイルCSSインポート入力ダイアログを表示
 - スタイルCSS（テキスト）を貼り付けて、「スタイルを上書き」ボタンをクリック
