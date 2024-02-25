@@ -1,0 +1,111 @@
+/* ==UserStyle==
+@name         日経テレコン ダークテーマ
+@namespace    github.com/oasis3855/NikkeiTelecon/Dark
+@version      2024.02.11
+@description  日経テレコン ダークテーマ（黒背景・白文字）
+@author       H.INOUE
+@homepageURL  https://github.com/oasis3855/userstyles/NikkeiTelecon
+@license      GNU GPL ver3
+==/UserStyle== */
+
+@-moz-document domain("t21.nikkei.co.jp") {
+
+    /* 全般設定：背景色・文字色・リンク文字色 */
+    body {
+        background-color: #333 !important;
+        color: #eee !important;
+        --col-bg-lv1: #333 !important;
+    }
+
+    main.contents,
+    header.header {
+        background-color: #333 !important;
+        color: #eee !important;
+        --col-bg-lv1: #333 !important;
+    }
+
+    a {
+        color: #b1b9ff !important;
+    }
+
+    /* ボタン、タイトル行等の背景色 */
+    h1,
+    h2,
+    h3,
+    /*ナビゲーションバー*/
+    nav.globalNav,
+    /*サイド ナビゲーションバー*/
+    ul.menuFolderList li a,
+    /*キーワード検索,*/
+    div[class ^="form"],
+    /*タイトル・本文を表示ボタン,*/
+    div.newsNav,
+    p.title,
+    /* 個別記事 タイトル */
+    div.hdgLv2,
+    table.table01,
+    div[class ^="hdg"],
+    /*検索結果 件数等*/
+    div.resultMsg {
+        background: #555 !important;
+        background-color: #555 !important;
+    }
+
+    /* スマホ: 右上ハンバーガーメニュー 背景*/
+    div#global-nav ul {
+        background: #558 !important;
+    }
+
+    /* タイトル行 文字色 */
+    h1,
+    h2,
+    h3 {
+        text-shadow: none !important;
+        color: #eee !important;
+    }
+
+    /*記事タイトル 2行目 出展 文字色*/
+    p.text.atc_txt01,
+    li.AttInfoBody span {
+        color: #8e8 !important;
+    }
+
+    /* ナビゲーションバー 文字色 */
+    div#global-nav ul li a,
+    /*サイド ナビゲーションバー*/
+    ul.menuFolderList li a {
+        color: #eee !important;
+    }
+
+    /* 検索系 背景色・文字色 */
+    input,
+    span.select select {
+        background: #aaa !important;
+        color: #000 !important;
+    }
+
+    /*検査悪結果 キーワード着色*/
+    span.hl1 {
+        background: #663 !important;
+    }
+
+    /* スマホ: 記事リストチェックボックス */
+    label.col {
+        background-color: #333333 !important;
+    }
+
+    /* フォントサイズの調整 */
+    @media screen and (max-width: 750px) {
+
+        /* 狭い画面の場合 */
+        p {
+            font-size: 1.6rem !important;
+        }
+    }
+
+    @media screen and (min-width: 751px) {
+        p {
+            font-size: 1.8rem !important;
+        }
+    }
+}

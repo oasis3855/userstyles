@@ -1,0 +1,42 @@
+/* ==UserStyle==
+@name         携帯2chﾌﾞﾗｳｻﾞ ぬこ ダークテーマ
+@namespace    github.com/oasis3855/Nuko/Dark
+@version      2018.12.15
+@description  携帯2chﾌﾞﾗｳｻﾞ ぬこ ダークテーマ（黒背景・白文字）
+@author       H.INOUE
+@homepageURL  https://github.com/oasis3855/userstyles/Nuko
+@license      GNU GPL ver3
+==/UserStyle== */
+
+@-moz-document domain("n2ch.net") {
+    * {
+        background-color: #333333;
+        color: #eeeeee;
+        font-family: sans-serif;
+        /* フォントサイズを基準フォントからの比率で示す */
+        font-size: 1.05em;
+    }
+
+    font[color="red"] {
+        color: #f55 ! important;
+    }
+
+    a:link {
+        color: #eeeeee;
+    }
+
+    a:visited {
+        color: #aaaaaa ! important;
+    }
+
+    a:hover,
+    a:active {
+        color: #ffaaaa ! important;
+    }
+
+    hr {
+        height: 1px;
+        border: none;
+        border-top: 1px #555555 solid;
+    }
+}
