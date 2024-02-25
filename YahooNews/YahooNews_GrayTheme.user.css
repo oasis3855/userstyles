@@ -1,13 +1,12 @@
 /* ==UserStyle==
-@name         Yahooニュース 背景色グレー化
-@namespace    StylishThemes
+@name         Yahoo!ニュース グレーテーマ
+@namespace    github.com/oasis3855/YahooNews/Gray
 @version      2021.03.05
-@description  Yahooニュース グレーテーマ
+@description  Yahoo!ニュース グレーテーマ（灰色背景・黒文字）
 @author       H.INOUE
 @homepageURL  https://github.com/oasis3855/userstyles/tree/main/YahooNews
-@license      GNU GPL ver2
+@license      GNU GPL ver3
 ==/UserStyle== */
-
 @-moz-document domain("news.yahoo.co.jp"), domain("headlines.yahoo.co.jp") {
     :root {
         --col-bg-hover-normal: none !important;
