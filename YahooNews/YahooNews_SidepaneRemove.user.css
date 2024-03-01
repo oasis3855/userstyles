@@ -1,13 +1,12 @@
 /* ==UserStyle==
 @name         Yahoo!ニュース サイドペイン非表示
 @namespace    github.com/oasis3855/YahooNews/Sidepane
-@version      2022.09.03
+@version      2024.03.01
 @description  Yahoo!ニュース サイドペイン非表示
 @author       H.INOUE
 @homepageURL  https://github.com/oasis3855/userstyles/tree/main/YahooNews
 @license      GNU GPL ver3
 ==/UserStyle== */
-
 @-moz-document domain("news.yahoo.co.jp") {
 
     /* news.yahoo.co.jp*/
@@ -35,6 +34,18 @@
         visibility: hidden !important;
     }
 
+    /* ヤフトピ 注目度メーター */
+    div[class ^="sc-fqU"],
+    /* トップニュースと一覧の間にあるコメントトレンド */
+    div[class ^="sc-FT"],
+    /* トップニュースと一覧の間にあるコメントトレンド（モバイル） */
+    div[class ^="sc-hZi"],
+    /* Yahoo ニュースライブ リンク */
+    div[class ^="sc-bez"] {
+        visibility: hidden !important;
+        display: none !important;
+        height: 0 !important;
+    }
 
     /* ニュースエリア */
     div#yjnMain {

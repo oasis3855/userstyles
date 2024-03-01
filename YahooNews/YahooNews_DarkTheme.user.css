@@ -1,16 +1,32 @@
 /* ==UserStyle==
 @name         Yahoo!ニュース ダークテーマ
 @namespace    github.com/oasis3855/YahooNews/Dark
-@version      2023.07.29
+@version      2024.03.01
 @description  Yahoo!ニュース ダークテーマ（黒背景・白文字）
 @author       H.INOUE
 @homepageURL  https://github.com/oasis3855/userstyles/tree/main/YahooNews
 @license      GNU GPL ver3
 ==/UserStyle== */
-
-@-moz-document domain("news.yahoo.co.jp"), domain("headlines.yahoo.co.jp"), domain("https://finance.yahoo.co.jp/news") {
+@-moz-document domain("news.yahoo.co.jp"),
+domain("headlines.yahoo.co.jp"),
+url-prefix("https://finance.yahoo.co.jp/news") {
 
     /* news.yahoo.co.jp finance.yahoo.co.jp*/
+    /* ページ全体 */
+    body,
+    /* デスクトップ版Web */
+    div.JOel,
+    /* スマホ版Web */
+    main#contents,
+    main.bvzJeJ,
+    div.isVvoD,
+    div[class ^="sc-fcY"],
+    /* Yahooニュースオリジナル モバイル */
+    section.RecentBlock,
+    section.MediaBlock {
+        background-color: #333333 !important;
+    }
+
     :root {
         --col-bg-hover-normal: none !important;
         --col-bg-hover-normal-pc: none !important;
@@ -26,7 +42,9 @@
     li.listFeedWrap a,
     .listModBox a dl dt,
     div.newsFeed_item_title,
-    p.topics_item_title {
+    p.topics_item_title,
+    /* オリジナルYahooニュース */
+    p.ArticleListItem_title {
         color: #eeeeee !important;
         font-weight: normal !important;
     }
@@ -84,7 +102,10 @@
     header.lRfdj,
     /* header の左右両端 ウインドウ限界まで */
     div.eWsTCW,
+    /*ページヘッダー */
     div#yjsmhHeader,
+    header#yjnHeader,
+    div.hrWUOE,
     div[id ^=contentsWrap],
     div#content,
     div.contentsWrap,
@@ -165,7 +186,8 @@
     media#contents,
     div.mediaArticleListMain,
     div.newsFeed,
-    div[class ^="pickup"] {
+    div[class ^="pickup"],
+    ul[id ^="uamods"] li[class ^="sc-edo"] {
         background-color: #333333 !important;
         color: #eeeeee !important;
         --col-bg-lv1: #333333 !important;
