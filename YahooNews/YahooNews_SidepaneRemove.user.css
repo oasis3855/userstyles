@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Yahoo!ニュース サイドペイン非表示
 @namespace    github.com/oasis3855/YahooNews/Sidepane
-@version      2024.03.12
+@version      2024.07.31
 @description  Yahoo!ニュース サイドペイン非表示
 @author       H.INOUE
 @homepageURL  https://github.com/oasis3855/userstyles/tree/main/YahooNews
@@ -47,7 +47,9 @@
     /* コメントトレンド mobile */
     div[class ^="sc-kyzj"],
     /* Yahoo ニュースライブ リンク */
-    div[class ^="sc-bez"] {
+    div[class ^="sc-bez"],
+    /* Yahoo ニュースライブ 動画 */
+    div[class^=sc-qhz] {
         visibility: hidden !important;
         display: none !important;
         height: 0 !important;
