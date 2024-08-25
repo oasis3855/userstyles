@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Yahoo!ニュース ダークテーマ
 @namespace    github.com/oasis3855/YahooNews/Dark
-@version      2024.07.31
+@version      2024.08.25
 @description  Yahoo!ニュース ダークテーマ（黒背景・白文字）
 @author       H.INOUE
 @homepageURL  https://github.com/oasis3855/userstyles/tree/main/YahooNews
@@ -284,7 +284,8 @@ url-prefix("https://finance.yahoo.co.jp/news") {
     div[id ^="yjsmhLogo"],
     div[class ^="_1zYh2mm2"],
     /* 記事一覧 */
-    div[class ^="NmK"] {
+    div[class ^="NmK"],
+    div[class ^="card_"] {
         background-color: #333333 !important;
         color: #eeeeee !important;
         --col-bg-lv1: #333333 !important;
