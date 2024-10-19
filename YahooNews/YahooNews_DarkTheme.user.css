@@ -292,7 +292,8 @@ url-prefix("https://finance.yahoo.co.jp/news") {
     div[class ^="_1zYh2mm2"],
     /* 記事一覧 */
     div[class ^="NmK"],
-    div[class ^="card_"] {
+    div[class ^="card_"],
+    div[class ^="Card_"]  {
         background-color: #333333 !important;
         color: #eeeeee !important;
         --col-bg-lv1: #333333 !important;
