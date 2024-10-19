@@ -223,6 +223,13 @@ url-prefix("https://finance.yahoo.co.jp/news") {
     :root {
         --color-bg-hover-normal-pc: #202020 ! important;
     }
+    div#newsFeed a:hover {
+        background-color: #202020 ! important;
+    }
+    div#newsFeed a div div {
+        color: #eeeeee !important;
+        text-decoration: none ! important;
+    }
 
     div#msthd,
     div#yjsmhLogo,
