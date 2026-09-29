@@ -21,6 +21,9 @@ url-prefix("https://finance.yahoo.co.jp/news") {
     main.bvzJeJ,
     div.isVvoD,
     div[class ^="sc-fcY"],
+    div[class ^="sc-8fcc13"],
+    header[class ^="sc-46aa6"],
+    div[class ^="sc-6313"],
     /* Yahooニュースオリジナル モバイル */
     section.RecentBlock,
     section.MediaBlock {
